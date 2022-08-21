@@ -6,8 +6,17 @@
 
 #include <algorithm>
 #include <numeric>
+#include <vector>
 
 using namespace std;
+
+
+#define SORT_BY(field)										\
+[](const AirlineTicket& lhs, const AirlineTicket& rhs)      \
+{															\
+	return lhs.field < rhs.field;							\
+}
+// Реализуйте этот макрос, а также необходимые операторы для классов Date и Time
 
 bool operator < (const Date& lhs, const Date& rhs) {
 	if (lhs.year == rhs.year) {
@@ -18,7 +27,7 @@ bool operator < (const Date& lhs, const Date& rhs) {
 	}
 	else
 		return lhs.day < rhs.day;
-};
+}
 bool operator == (const Date& lhs, const Date& rhs) {
 	if (lhs.year == rhs.year &&
 		lhs.month == rhs.month &&
@@ -38,7 +47,7 @@ bool operator < (const Time& lhs, const Time& rhs) {
 		return lhs.minutes < rhs.minutes;
 	else
 		return lhs.hours < rhs.hours;
-};
+}
 
 bool operator == (const Time& lhs, const Time& rhs) {
 	if (lhs.hours == rhs.hours &&
@@ -46,19 +55,12 @@ bool operator == (const Time& lhs, const Time& rhs) {
 		return true;
 	else
 		return false;
-};
+}
 
 ostream& operator << (ostream& out, const Time& time) {
 	out << time.hours << ":" << time.minutes << endl;
 	return out;
 }
-
-#define SORT_BY(field)								       \ 
-[](const AirlineTicket& lhs, const AirlineTicket& rhs)     \
-{                                                          \
-	return lhs.field < rhs.field;                          \
-}
-// Реализуйте этот макрос, а также необходимые операторы для классов Date и Time
 
 void TestSortBy() {
 	vector<AirlineTicket> tixs = {
