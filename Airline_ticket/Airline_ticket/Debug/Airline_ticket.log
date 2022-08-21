@@ -1,0 +1,11 @@
+﻿  Airline_ticket.cpp
+C:\Repos\cpp_red_belt\Airline_ticket\Airline_ticket\Airline_ticket.cpp(57,2): error C3409: пустой блок атрибута не допускается
+C:\Repos\cpp_red_belt\Airline_ticket\Airline_ticket\Airline_ticket.cpp(57,4): error C2059: синтаксическая ошибка: const
+C:\Repos\cpp_red_belt\Airline_ticket\Airline_ticket\Airline_ticket.cpp(58,1): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+C:\Repos\cpp_red_belt\Airline_ticket\Airline_ticket\Airline_ticket.cpp(58,1): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+C:\Repos\cpp_red_belt\Airline_ticket\Airline_ticket\Airline_ticket.cpp(72,31): error C2017: недопустимая escape-последовательность
+C:\Repos\cpp_red_belt\Airline_ticket\Airline_ticket\Airline_ticket.cpp(72,45): error C2059: синтаксическая ошибка: )
+C:\Repos\cpp_red_belt\Airline_ticket\Airline_ticket\Airline_ticket.cpp(76,31): error C2017: недопустимая escape-последовательность
+C:\Repos\cpp_red_belt\Airline_ticket\Airline_ticket\Airline_ticket.cpp(76,44): error C2059: синтаксическая ошибка: )
+C:\Repos\cpp_red_belt\Airline_ticket\Airline_ticket\Airline_ticket.cpp(80,31): error C2017: недопустимая escape-последовательность
+C:\Repos\cpp_red_belt\Airline_ticket\Airline_ticket\Airline_ticket.cpp(80,52): error C2059: синтаксическая ошибка: )
