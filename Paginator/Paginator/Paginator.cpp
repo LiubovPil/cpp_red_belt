@@ -36,9 +36,8 @@ public:
 
 template <typename Iterator>
 class Paginator {
-
-/*public:
-    Paginator(Iterator first, Iterator end, size_t page_size){
+/*
+*     Paginator(Iterator first, Iterator end, size_t page_size){
         Iterator border = first;
         for (size_t i = 0; i < page_size; i++) {
             for (Iterator it = border; it != next(border, page_size); it++) {
@@ -48,17 +47,9 @@ class Paginator {
             border = next(border, page_size);
         }
     }
-    auto begin() const {
-        return pages.begin();
-    }
-    auto end() const {
-        return pages.end();
-    }
-    size_t size() const {
-        return pages.size();
-    }
 private:
-    vector<vector<Iterator>> pages;*/
+    vector<vector<Iterator>> pages;
+*/
 private:
     vector<IteratorRange<Iterator>> pages;
 
@@ -67,7 +58,7 @@ public:
         for (size_t left = distance(begin, end); left > 0; ) {
             size_t current_page_size = min(page_size, left);
             Iterator current_page_end = next(begin, current_page_size);
-            pages.push_back({ begin, current_page_end });
+            pages.push_back({ begin, current_page_end }); // pages.push_back(IteratorRange)
 
             left -= current_page_size;
             begin = current_page_end;
