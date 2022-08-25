@@ -1,0 +1,3 @@
+﻿  SortStudent.cpp
+SortStudent.obj : error LNK2019: ссылка на неразрешенный внешний символ "void __cdecl Assert(bool,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (?Assert@@YAX_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) в функции "void __cdecl TestComparison(void)" (?TestComparison@@YAXXZ).
+E:\Repos\cpp_red_belt\SortStudent\Debug\SortStudent.exe : fatal error LNK1120: неразрешенных внешних элементов: 1
