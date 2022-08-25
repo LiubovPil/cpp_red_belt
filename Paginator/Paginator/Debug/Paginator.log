@@ -1,188 +1,148 @@
 ﻿  Paginator.cpp
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(63,12): error C2955: "Paginator": для использования класс шаблон требуется список аргументов шаблон
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(36): message : см. объявление "Paginator"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(63,21): message : "Paginator": объявление функции должно быть доступно, так как ни один из аргументов не зависит от параметра шаблона
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(69,5): error C2672: "AssertEqual": не найдена соответствующая перегруженная функция
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(70,5): error C2672: "AssertEqual": не найдена соответствующая перегруженная функция
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(71,5): error C2672: "AssertEqual": не найдена соответствующая перегруженная функция
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(72,5): error C2672: "AssertEqual": не найдена соответствующая перегруженная функция
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(73,5): error C2672: "AssertEqual": не найдена соответствующая перегруженная функция
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(74,5): error C2672: "AssertEqual": не найдена соответствующая перегруженная функция
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(75,5): error C2672: "AssertEqual": не найдена соответствующая перегруженная функция
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(85,22): error C2672: "begin": не найдена соответствующая перегруженная функция
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(85,28): error C2893: Сбой при специализации функции-шаблона "unknown-type std::begin(_Container &)".
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(92,12): error C2955: "Paginator": для использования класс шаблон требуется список аргументов шаблон
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(38): message : см. объявление "Paginator"
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(92,21): message : "Paginator": объявление функции должно быть доступно, так как ни один из аргументов не зависит от параметра шаблона
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(98,5): error C2672: "AssertEqual": не найдена соответствующая перегруженная функция
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(99,5): error C2672: "AssertEqual": не найдена соответствующая перегруженная функция
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(100,5): error C2672: "AssertEqual": не найдена соответствующая перегруженная функция
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(101,5): error C2672: "AssertEqual": не найдена соответствующая перегруженная функция
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(102,5): error C2672: "AssertEqual": не найдена соответствующая перегруженная функция
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(103,5): error C2672: "AssertEqual": не найдена соответствующая перегруженная функция
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(104,5): error C2672: "AssertEqual": не найдена соответствующая перегруженная функция
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(125): error C2100: недопустимое косвенное обращение
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(125,39): error C2182: <template-parameter>: недопустимое использование типа "void"
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(125,30): error C3313: "<range>$L0": переменная не может иметь тип "auto &&"
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(125,39): error C2440: инициализация: невозможно преобразовать "void" в "int"
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(125,30): message : Выражение, имеющее тип void, нельзя преобразовать в другой тип
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(125,30): error C2672: "begin": не найдена соответствующая перегруженная функция
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(125,39): error C2893: Сбой при специализации функции-шаблона "unknown-type std::begin(_Container &)".
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(1916): message : см. объявление "std::begin"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(85,28): message : Со следующими аргументами шаблона:
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(85,28): message : "_Container=const int"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(85,28): error C2784: const _Elem *std::begin(std::initializer_list<_Elem>) noexcept: не удалось вывести аргумент шаблон для "std::initializer_list<_Elem>" из "const int"
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(125,39): message : Со следующими аргументами шаблона:
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(125,39): message : "_Container=int"
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(125,39): error C2784: const _Elem *std::begin(std::initializer_list<_Elem>) noexcept: не удалось вывести аргумент шаблон для "std::initializer_list<_Elem>" из "int"
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\initializer_list(57): message : см. объявление "std::begin"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(85,22): error C2672: "end": не найдена соответствующая перегруженная функция
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(85,28): error C2893: Сбой при специализации функции-шаблона "unknown-type std::end(_Container &)".
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(125,30): error C2672: "end": не найдена соответствующая перегруженная функция
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(125,39): error C2893: Сбой при специализации функции-шаблона "unknown-type std::end(_Container &)".
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(1926): message : см. объявление "std::end"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(85,28): message : Со следующими аргументами шаблона:
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(85,28): message : "_Container=const int"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(85,28): error C2784: const _Elem *std::end(std::initializer_list<_Elem>) noexcept: не удалось вывести аргумент шаблон для "std::initializer_list<_Elem>" из "const int"
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(125,39): message : Со следующими аргументами шаблона:
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(125,39): message : "_Container=int"
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(125,39): error C2784: const _Elem *std::end(std::initializer_list<_Elem>) noexcept: не удалось вывести аргумент шаблон для "std::initializer_list<_Elem>" из "int"
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\initializer_list(63): message : см. объявление "std::end"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(85,28): error C3536: <begin>$L1: не может использоваться до инициализации
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(85,28): error C3536: <end>$L1: не может использоваться до инициализации
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(85,26): error C2100: недопустимое косвенное обращение
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(96): error C2100: недопустимое косвенное обращение
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(96,39): error C2182: <template-parameter>: недопустимое использование типа "void"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(96,30): error C3313: "<range>$L0": переменная не может иметь тип "auto &&"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(96,39): error C2440: инициализация: невозможно преобразовать "void" в "int"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(96,30): message : Выражение, имеющее тип void, нельзя преобразовать в другой тип
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(96,30): error C2672: "begin": не найдена соответствующая перегруженная функция
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(96,39): error C2893: Сбой при специализации функции-шаблона "unknown-type std::begin(_Container &)".
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(125,39): error C3536: <begin>$L0: не может использоваться до инициализации
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(125,39): error C3536: <end>$L0: не может использоваться до инициализации
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(125,37): error C2100: недопустимое косвенное обращение
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(126,27): error C2672: "begin": не найдена соответствующая перегруженная функция
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(126,33): error C2893: Сбой при специализации функции-шаблона "unknown-type std::begin(_Container &)".
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(1916): message : см. объявление "std::begin"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(96,39): message : Со следующими аргументами шаблона:
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(96,39): message : "_Container=int"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(96,39): error C2784: const _Elem *std::begin(std::initializer_list<_Elem>) noexcept: не удалось вывести аргумент шаблон для "std::initializer_list<_Elem>" из "int"
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(126,33): message : Со следующими аргументами шаблона:
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(126,33): message : "_Container=int"
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(126,33): error C2784: const _Elem *std::begin(std::initializer_list<_Elem>) noexcept: не удалось вывести аргумент шаблон для "std::initializer_list<_Elem>" из "int"
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\initializer_list(57): message : см. объявление "std::begin"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(96,30): error C2672: "end": не найдена соответствующая перегруженная функция
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(96,39): error C2893: Сбой при специализации функции-шаблона "unknown-type std::end(_Container &)".
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(126,27): error C2672: "end": не найдена соответствующая перегруженная функция
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(126,33): error C2893: Сбой при специализации функции-шаблона "unknown-type std::end(_Container &)".
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(1926): message : см. объявление "std::end"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(96,39): message : Со следующими аргументами шаблона:
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(96,39): message : "_Container=int"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(96,39): error C2784: const _Elem *std::end(std::initializer_list<_Elem>) noexcept: не удалось вывести аргумент шаблон для "std::initializer_list<_Elem>" из "int"
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(126,33): message : Со следующими аргументами шаблона:
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(126,33): message : "_Container=int"
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(126,33): error C2784: const _Elem *std::end(std::initializer_list<_Elem>) noexcept: не удалось вывести аргумент шаблон для "std::initializer_list<_Elem>" из "int"
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\initializer_list(63): message : см. объявление "std::end"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(96,39): error C3536: <begin>$L0: не может использоваться до инициализации
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(96,39): error C3536: <end>$L0: не может использоваться до инициализации
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(96,37): error C2100: недопустимое косвенное обращение
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(97,27): error C2672: "begin": не найдена соответствующая перегруженная функция
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(97,33): error C2893: Сбой при специализации функции-шаблона "unknown-type std::begin(_Container &)".
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(126,33): error C3536: <begin>$L1: не может использоваться до инициализации
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(126,33): error C3536: <end>$L1: не может использоваться до инициализации
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(126,31): error C2100: недопустимое косвенное обращение
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(127,19): error C2109: для индекса требуется массив или указатель
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(127,37): error C2109: для индекса требуется массив или указатель
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(138,68): error C2514: "Paginator": невозможно создать шаблон класса.
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(38): message : см. объявление "Paginator"
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(140,47): error C2662: auto Paginator<Iterator>::begin(void) const: невозможно преобразовать указатель "this" из "Paginator" в "const Paginator<Iterator> &"
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(140,47): message : Причина: невозможно преобразовать "Paginator" в "const Paginator<Iterator>"
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(140,29): message : Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(77,10): message : см. объявление "Paginator<Iterator>::begin"
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(140,47): error C2662: auto Paginator<Iterator>::end(void) const: невозможно преобразовать указатель "this" из "Paginator" в "const Paginator<Iterator> &"
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(140,47): message : Причина: невозможно преобразовать "Paginator" в "const Paginator<Iterator>"
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(140,29): message : Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(81,10): message : см. объявление "Paginator<Iterator>::end"
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(140,47): error C3536: <begin>$L0: не может использоваться до инициализации
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(140,47): error C3536: <end>$L0: не может использоваться до инициализации
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(140,47): error C2100: недопустимое косвенное обращение
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(152): error C2100: недопустимое косвенное обращение
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(152,52): error C2182: <template-parameter>: недопустимое использование типа "void"
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(152,37): error C3313: "<range>$L0": переменная не может иметь тип "auto &&"
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(152,52): error C2440: инициализация: невозможно преобразовать "void" в "int"
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(152,37): message : Выражение, имеющее тип void, нельзя преобразовать в другой тип
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(152,37): error C2672: "begin": не найдена соответствующая перегруженная функция
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(152,52): error C2893: Сбой при специализации функции-шаблона "unknown-type std::begin(_Container &)".
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(1916): message : см. объявление "std::begin"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(97,33): message : Со следующими аргументами шаблона:
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(97,33): message : "_Container=int"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(97,33): error C2784: const _Elem *std::begin(std::initializer_list<_Elem>) noexcept: не удалось вывести аргумент шаблон для "std::initializer_list<_Elem>" из "int"
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(152,52): message : Со следующими аргументами шаблона:
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(152,52): message : "_Container=int"
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(152,52): error C2784: const _Elem *std::begin(std::initializer_list<_Elem>) noexcept: не удалось вывести аргумент шаблон для "std::initializer_list<_Elem>" из "int"
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\initializer_list(57): message : см. объявление "std::begin"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(97,27): error C2672: "end": не найдена соответствующая перегруженная функция
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(97,33): error C2893: Сбой при специализации функции-шаблона "unknown-type std::end(_Container &)".
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(152,37): error C2672: "end": не найдена соответствующая перегруженная функция
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(152,52): error C2893: Сбой при специализации функции-шаблона "unknown-type std::end(_Container &)".
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(1926): message : см. объявление "std::end"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(97,33): message : Со следующими аргументами шаблона:
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(97,33): message : "_Container=int"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(97,33): error C2784: const _Elem *std::end(std::initializer_list<_Elem>) noexcept: не удалось вывести аргумент шаблон для "std::initializer_list<_Elem>" из "int"
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(152,52): message : Со следующими аргументами шаблона:
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(152,52): message : "_Container=int"
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(152,52): error C2784: const _Elem *std::end(std::initializer_list<_Elem>) noexcept: не удалось вывести аргумент шаблон для "std::initializer_list<_Elem>" из "int"
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\initializer_list(63): message : см. объявление "std::end"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(97,33): error C3536: <begin>$L1: не может использоваться до инициализации
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(97,33): error C3536: <end>$L1: не может использоваться до инициализации
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(97,31): error C2100: недопустимое косвенное обращение
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(98,19): error C2109: для индекса требуется массив или указатель
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(98,37): error C2109: для индекса требуется массив или указатель
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(109,68): error C2514: "Paginator": невозможно создать шаблон класса.
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(36): message : см. объявление "Paginator"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(111,47): error C2662: Iterator Paginator<Iterator>::begin(void) const: невозможно преобразовать указатель "this" из "Paginator" в "const Paginator<Iterator> &"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(111,47): message : Причина: невозможно преобразовать "Paginator" в "const Paginator<Iterator>"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(111,29): message : Для преобразования требуется второй оператор пользовательского преобразования или конструктор
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(48,14): message : см. объявление "Paginator<Iterator>::begin"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(111,47): error C2662: Iterator Paginator<Iterator>::end(void) const: невозможно преобразовать указатель "this" из "Paginator" в "const Paginator<Iterator> &"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(111,47): message : Причина: невозможно преобразовать "Paginator" в "const Paginator<Iterator>"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(111,29): message : Для преобразования требуется второй оператор пользовательского преобразования или конструктор
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(51,14): message : см. объявление "Paginator<Iterator>::end"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(111,47): error C3536: <begin>$L0: не может использоваться до инициализации
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(111,47): error C3536: <end>$L0: не может использоваться до инициализации
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(111,47): error C2100: недопустимое косвенное обращение
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(123): error C2100: недопустимое косвенное обращение
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(123,52): error C2182: <template-parameter>: недопустимое использование типа "void"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(123,37): error C3313: "<range>$L0": переменная не может иметь тип "auto &&"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(123,52): error C2440: инициализация: невозможно преобразовать "void" в "int"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(123,37): message : Выражение, имеющее тип void, нельзя преобразовать в другой тип
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(123,37): error C2672: "begin": не найдена соответствующая перегруженная функция
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(123,52): error C2893: Сбой при специализации функции-шаблона "unknown-type std::begin(_Container &)".
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(152,52): error C3536: <begin>$L0: не может использоваться до инициализации
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(152,52): error C3536: <end>$L0: не может использоваться до инициализации
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(152,50): error C2100: недопустимое косвенное обращение
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(165): error C2100: недопустимое косвенное обращение
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(165,51): error C2182: <template-parameter>: недопустимое использование типа "void"
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(165,43): error C3313: "<range>$L0": переменная не может иметь тип "auto &&"
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(165,51): error C2440: инициализация: невозможно преобразовать "void" в "int"
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(165,43): message : Выражение, имеющее тип void, нельзя преобразовать в другой тип
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(165,43): error C2672: "begin": не найдена соответствующая перегруженная функция
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(165,51): error C2893: Сбой при специализации функции-шаблона "unknown-type std::begin(_Container &)".
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(1916): message : см. объявление "std::begin"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(123,52): message : Со следующими аргументами шаблона:
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(123,52): message : "_Container=int"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(123,52): error C2784: const _Elem *std::begin(std::initializer_list<_Elem>) noexcept: не удалось вывести аргумент шаблон для "std::initializer_list<_Elem>" из "int"
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(165,51): message : Со следующими аргументами шаблона:
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(165,51): message : "_Container=int"
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(165,51): error C2784: const _Elem *std::begin(std::initializer_list<_Elem>) noexcept: не удалось вывести аргумент шаблон для "std::initializer_list<_Elem>" из "int"
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\initializer_list(57): message : см. объявление "std::begin"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(123,37): error C2672: "end": не найдена соответствующая перегруженная функция
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(123,52): error C2893: Сбой при специализации функции-шаблона "unknown-type std::end(_Container &)".
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(165,43): error C2672: "end": не найдена соответствующая перегруженная функция
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(165,51): error C2893: Сбой при специализации функции-шаблона "unknown-type std::end(_Container &)".
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(1926): message : см. объявление "std::end"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(123,52): message : Со следующими аргументами шаблона:
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(123,52): message : "_Container=int"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(123,52): error C2784: const _Elem *std::end(std::initializer_list<_Elem>) noexcept: не удалось вывести аргумент шаблон для "std::initializer_list<_Elem>" из "int"
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(165,51): message : Со следующими аргументами шаблона:
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(165,51): message : "_Container=int"
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(165,51): error C2784: const _Elem *std::end(std::initializer_list<_Elem>) noexcept: не удалось вывести аргумент шаблон для "std::initializer_list<_Elem>" из "int"
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\initializer_list(63): message : см. объявление "std::end"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(123,52): error C3536: <begin>$L0: не может использоваться до инициализации
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(123,52): error C3536: <end>$L0: не может использоваться до инициализации
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(123,50): error C2100: недопустимое косвенное обращение
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(136): error C2100: недопустимое косвенное обращение
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(136,51): error C2182: <template-parameter>: недопустимое использование типа "void"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(136,43): error C3313: "<range>$L0": переменная не может иметь тип "auto &&"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(136,51): error C2440: инициализация: невозможно преобразовать "void" в "int"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(136,43): message : Выражение, имеющее тип void, нельзя преобразовать в другой тип
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(136,43): error C2672: "begin": не найдена соответствующая перегруженная функция
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(136,51): error C2893: Сбой при специализации функции-шаблона "unknown-type std::begin(_Container &)".
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(165,51): error C3536: <begin>$L0: не может использоваться до инициализации
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(165,51): error C3536: <end>$L0: не может использоваться до инициализации
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(165,49): error C2100: недопустимое косвенное обращение
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(166): error C2100: недопустимое косвенное обращение
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(166,64): error C2182: <template-parameter>: недопустимое использование типа "void"
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(166,47): error C3313: "<range>$L1": переменная не может иметь тип "auto &&"
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(166,64): error C2440: инициализация: невозможно преобразовать "void" в "int"
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(166,47): message : Выражение, имеющее тип void, нельзя преобразовать в другой тип
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(166,47): error C2672: "begin": не найдена соответствующая перегруженная функция
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(166,64): error C2893: Сбой при специализации функции-шаблона "unknown-type std::begin(_Container &)".
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(1916): message : см. объявление "std::begin"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(136,51): message : Со следующими аргументами шаблона:
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(136,51): message : "_Container=int"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(136,51): error C2784: const _Elem *std::begin(std::initializer_list<_Elem>) noexcept: не удалось вывести аргумент шаблон для "std::initializer_list<_Elem>" из "int"
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(166,64): message : Со следующими аргументами шаблона:
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(166,64): message : "_Container=int"
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(166,64): error C2784: const _Elem *std::begin(std::initializer_list<_Elem>) noexcept: не удалось вывести аргумент шаблон для "std::initializer_list<_Elem>" из "int"
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\initializer_list(57): message : см. объявление "std::begin"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(136,43): error C2672: "end": не найдена соответствующая перегруженная функция
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(136,51): error C2893: Сбой при специализации функции-шаблона "unknown-type std::end(_Container &)".
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(166,47): error C2672: "end": не найдена соответствующая перегруженная функция
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(166,64): error C2893: Сбой при специализации функции-шаблона "unknown-type std::end(_Container &)".
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(1926): message : см. объявление "std::end"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(136,51): message : Со следующими аргументами шаблона:
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(136,51): message : "_Container=int"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(136,51): error C2784: const _Elem *std::end(std::initializer_list<_Elem>) noexcept: не удалось вывести аргумент шаблон для "std::initializer_list<_Elem>" из "int"
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(166,64): message : Со следующими аргументами шаблона:
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(166,64): message : "_Container=int"
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(166,64): error C2784: const _Elem *std::end(std::initializer_list<_Elem>) noexcept: не удалось вывести аргумент шаблон для "std::initializer_list<_Elem>" из "int"
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\initializer_list(63): message : см. объявление "std::end"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(136,51): error C3536: <begin>$L0: не может использоваться до инициализации
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(136,51): error C3536: <end>$L0: не может использоваться до инициализации
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(136,49): error C2100: недопустимое косвенное обращение
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(63,23): error C2672: "begin": не найдена соответствующая перегруженная функция
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(63,1): error C2893: Сбой при специализации функции-шаблона "unknown-type std::begin(_Container &)".
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(166,64): error C3536: <begin>$L1: не может использоваться до инициализации
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(166,64): error C3536: <end>$L1: не может использоваться до инициализации
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(166,62): error C2100: недопустимое косвенное обращение
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(168,29): error C2672: "begin": не найдена соответствующая перегруженная функция
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(168,41): error C2893: Сбой при специализации функции-шаблона "unknown-type std::begin(_Container &)".
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(1916): message : см. объявление "std::begin"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(63,1): message : Со следующими аргументами шаблона:
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(63,1): message : "_Container=C"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(63,1): error C2784: const _Elem *std::begin(std::initializer_list<_Elem>) noexcept: не удалось вывести аргумент шаблон для "std::initializer_list<_Elem>" из "C"
-          with
-          [
-              C=const int
-          ]
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(168,41): message : Со следующими аргументами шаблона:
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(168,41): message : "_Container=const int"
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(168,41): error C2784: const _Elem *std::begin(std::initializer_list<_Elem>) noexcept: не удалось вывести аргумент шаблон для "std::initializer_list<_Elem>" из "const int"
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\initializer_list(57): message : см. объявление "std::begin"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(63,35): error C2672: "end": не найдена соответствующая перегруженная функция
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(63,1): error C2893: Сбой при специализации функции-шаблона "unknown-type std::end(_Container &)".
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(168,29): error C2672: "end": не найдена соответствующая перегруженная функция
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(168,41): error C2893: Сбой при специализации функции-шаблона "unknown-type std::end(_Container &)".
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(1926): message : см. объявление "std::end"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(63,1): message : Со следующими аргументами шаблона:
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(63,1): message : "_Container=C"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(63,1): error C2784: const _Elem *std::end(std::initializer_list<_Elem>) noexcept: не удалось вывести аргумент шаблон для "std::initializer_list<_Elem>" из "C"
-          with
-          [
-              C=const int
-          ]
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(168,41): message : Со следующими аргументами шаблона:
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(168,41): message : "_Container=const int"
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(168,41): error C2784: const _Elem *std::end(std::initializer_list<_Elem>) noexcept: не удалось вывести аргумент шаблон для "std::initializer_list<_Elem>" из "const int"
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\initializer_list(63): message : см. объявление "std::end"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(137): error C2100: недопустимое косвенное обращение
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(137,64): error C2182: <template-parameter>: недопустимое использование типа "void"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(137,47): error C3313: "<range>$L1": переменная не может иметь тип "auto &&"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(137,64): error C2440: инициализация: невозможно преобразовать "void" в "int"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(137,47): message : Выражение, имеющее тип void, нельзя преобразовать в другой тип
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(137,47): error C2672: "begin": не найдена соответствующая перегруженная функция
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(137,64): error C2893: Сбой при специализации функции-шаблона "unknown-type std::begin(_Container &)".
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(1916): message : см. объявление "std::begin"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(137,64): message : Со следующими аргументами шаблона:
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(137,64): message : "_Container=int"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(137,64): error C2784: const _Elem *std::begin(std::initializer_list<_Elem>) noexcept: не удалось вывести аргумент шаблон для "std::initializer_list<_Elem>" из "int"
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\initializer_list(57): message : см. объявление "std::begin"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(137,47): error C2672: "end": не найдена соответствующая перегруженная функция
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(137,64): error C2893: Сбой при специализации функции-шаблона "unknown-type std::end(_Container &)".
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(1926): message : см. объявление "std::end"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(137,64): message : Со следующими аргументами шаблона:
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(137,64): message : "_Container=int"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(137,64): error C2784: const _Elem *std::end(std::initializer_list<_Elem>) noexcept: не удалось вывести аргумент шаблон для "std::initializer_list<_Elem>" из "int"
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\initializer_list(63): message : см. объявление "std::end"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(137,64): error C3536: <begin>$L1: не может использоваться до инициализации
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(137,64): error C3536: <end>$L1: не может использоваться до инициализации
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(137,62): error C2100: недопустимое косвенное обращение
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(139,29): error C2672: "begin": не найдена соответствующая перегруженная функция
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(139,41): error C2893: Сбой при специализации функции-шаблона "unknown-type std::begin(_Container &)".
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(1916): message : см. объявление "std::begin"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(139,41): message : Со следующими аргументами шаблона:
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(139,41): message : "_Container=const int"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(139,41): error C2784: const _Elem *std::begin(std::initializer_list<_Elem>) noexcept: не удалось вывести аргумент шаблон для "std::initializer_list<_Elem>" из "const int"
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\initializer_list(57): message : см. объявление "std::begin"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(139,29): error C2672: "end": не найдена соответствующая перегруженная функция
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(139,41): error C2893: Сбой при специализации функции-шаблона "unknown-type std::end(_Container &)".
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(1926): message : см. объявление "std::end"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(139,41): message : Со следующими аргументами шаблона:
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(139,41): message : "_Container=const int"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(139,41): error C2784: const _Elem *std::end(std::initializer_list<_Elem>) noexcept: не удалось вывести аргумент шаблон для "std::initializer_list<_Elem>" из "const int"
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\initializer_list(63): message : см. объявление "std::end"
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(139,41): error C3536: <begin>$L2: не может использоваться до инициализации
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(139,41): error C3536: <end>$L2: не может использоваться до инициализации
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(139,39): error C2100: недопустимое косвенное обращение
-E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(139,41): fatal error C1003: число ошибок превышает 100; остановка компиляции
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(168,41): error C3536: <begin>$L2: не может использоваться до инициализации
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(168,41): error C3536: <end>$L2: не может использоваться до инициализации
+E:\Repos\cpp_red_belt\Paginator\Paginator\Paginator.cpp(168,39): error C2100: недопустимое косвенное обращение
