@@ -1,17 +1,17 @@
 ﻿// Tasks from the course "Fundamentals of C++: Red Belt
 // Done by Liubov Piliagina
 
-#include "student.h"
-#include "Test_runner.h"
+#include "Student.h"
+#include "Test_Runner.h"
+#include "Profiler.h"
 
 #include <algorithm>
 
 using namespace std;
 
-//Оптимизируйте эту функцию
 bool Compare(const Student& first, const Student& second) {
     return first.Less(second);
-}
+};
 
 void TestComparison() {
     Student newbie{
