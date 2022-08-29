@@ -7,14 +7,18 @@
 #include <map>
 #include <string>
 #include <vector>
+#include <set>
 
 using namespace std;
 
 class RouteManager {
 public:
     void AddRoute(int start, int finish) {
-        reachable_lists_[start].push_back(finish);
-        reachable_lists_[finish].push_back(start);
+        //reachable_lists_[start].push_back(finish);
+        //reachable_lists_[finish].push_back(start);
+
+        reachable_lists[start].insert(finish);
+        reachable_lists[finish].insert(start);
     }
     int FindNearestFinish(int start, int finish) const {
         /*int result = abs(start - finish);
@@ -33,13 +37,35 @@ public:
         }
         return result;
         */
-        int result = 0;
-        if (reachable_lists_.count(start) == 1) {
+        
+        int result = abs(start - finish);
+        if (reachable_lists.count(start) < 1) {
             return result;
         }
+        const set<int>& reachable_stations = reachable_lists.at(start);
+        if (reachable_stations.count(finish) == 1) {
+            return result = 0;
+        }
+        else {
+         result = min(result, abs(finish - *min_element(
+                    begin(reachable_stations), end(reachable_stations),
+                    [finish](int lhs, int rhs) { return abs(lhs - finish) < abs(rhs - finish); }
+                ))
+             );
+        }
+        /*const auto finish_pos = reachable_stations.lower_bound(finish);
+        if (finish_pos != end(reachable_stations)) {
+            result = min(result, abs(finish - *finish_pos));
+        }
+        if (finish_pos != begin(reachable_stations)) {
+            result = min(result, abs(finish - *prev(finish_pos)));
+        }*/
+        return result;
+        
     }
 private:
-    map<int, vector<int>> reachable_lists_;
+    //map<int, vector<int>> reachable_lists_;
+    map <int, set<int>>  reachable_lists;
 };
 
 
