@@ -21,12 +21,13 @@ struct BookInfo {
 class HotelManager {
 public:
     HotelManager(): 
-        start_time(steady_clock::now()),
         current_time(0) {}
 
     void BookRoom(long long time, string& hotel_name, int client_id, int room) {
         UpdateHotelsBase(hotel_name);
         hotels_base[hotel_name].push({ time , client_id , room });
+        reserved_rooms[hotel_name] += room;
+        guests[hotel_name][client_id]++;
 
         current_time = time;
     }
@@ -34,31 +35,35 @@ public:
         UpdateHotelsBase(hotel_name);
         if (hotels_base[hotel_name].empty())
             return 0;
-        return hotels_base[hotel_name].size();
+        return guests[hotel_name].size();
     }
     int GetRoomsCount(string& hotel_name) {
         UpdateHotelsBase(hotel_name);
-        queue<BookInfo> hotel_bookinfo = hotels_base[hotel_name];
-        int rooms = 0;
-        if (!hotel_bookinfo.empty()) {
-            while (hotel_bookinfo.size() != 0) {
-                rooms += hotel_bookinfo.front().room_count;
-                hotel_bookinfo.pop();
-            }
-        }
-        return rooms;
+        if (hotels_base[hotel_name].empty())
+            return 0;
+        return reserved_rooms[hotel_name];
     }
 private:
-    map<string, queue<BookInfo>> hotels_base;
+    static const int SECONDS_IN_DAYS = 86400;
 
-    steady_clock::time_point start_time;
+    map<string, queue<BookInfo>> hotels_base;
+    map<string, map<int, int>> guests;
+    map<string, int> reserved_rooms;
+
     long long current_time;
 
     void UpdateHotelsBase(string& hotel_name) {
         queue<BookInfo>& hotel_bookinfo = hotels_base[hotel_name];
-        if (!hotel_bookinfo.empty()) {
-            while (hotel_bookinfo.front().booking_time <= current_time - 86400)
-                hotel_bookinfo.pop();
+        while (!hotel_bookinfo.empty() && 
+            hotel_bookinfo.front().booking_time <= current_time - SECONDS_IN_DAYS) {
+            reserved_rooms[hotel_name] -= hotel_bookinfo.front().room_count;
+
+            int client = hotel_bookinfo.front().client;
+            guests[hotel_name][client]--;
+            if (guests[hotel_name][client] == 0)
+                guests[hotel_name].erase(client);
+
+            hotel_bookinfo.pop();
         }
     }
 };
