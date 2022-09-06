@@ -1,3 +1,2 @@
 ﻿  Swap_Sort_Reversed.cpp
-Swap_Sort_Reversed.obj : error LNK2019: ссылка на неразрешенный внешний символ "void __cdecl ReversedCopy<int>(int *,unsigned int,int *)" (??$ReversedCopy@H@@YAXPAHI0@Z) в функции "void __cdecl TestReverseCopy(void)" (?TestReverseCopy@@YAXXZ).
-E:\Repos\cpp_red_belt\Swap_Sort_Reversed\Debug\Swap_Sort_Reversed.exe : fatal error LNK1120: неразрешенных внешних элементов: 1
+  Swap_Sort_Reversed.vcxproj -> E:\Repos\cpp_red_belt\Swap_Sort_Reversed\Debug\Swap_Sort_Reversed.exe
