@@ -15,12 +15,40 @@ public:
         Node* next = nullptr;
     };
 
-    ~LinkedList();
+    ~LinkedList() {
+        while (head != nullptr)
+            PopFront();
+    }
 
-    void PushFront(const T& value);
-    void InsertAfter(Node* node, const T& value);
-    void RemoveAfter(Node* node);
-    void PopFront();
+    void PushFront(const T& value) {
+        Node* new_head = new Node{value, head};  // auto node = new Node{value}; node->next = head; head = node;
+        head = new_head;
+    }
+
+    void InsertAfter(Node* node, const T& value) {
+        if (node) {
+            Node* new_node = new Node{ value, node->next };
+            node->next = new_node;
+        }
+        else
+            PushFront(value);
+    }
+
+    void RemoveAfter(Node* node) {
+        if (node == nullptr)
+            PopFront();
+        else if (node->next) {
+            Node* removed_node = node->next;
+            node->next = removed_node->next;
+            delete removed_node;
+        }
+    }
+
+    void PopFront() {
+        Node* new_head = head->next;
+        delete head;
+        head = new_head;
+    }
 
     Node* GetHead() { return head; }
     const Node* GetHead() const { return head; }
