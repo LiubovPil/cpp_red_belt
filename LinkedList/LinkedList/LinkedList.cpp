@@ -132,6 +132,7 @@ void TestPopFront() {
 }
 
 int main() {
+    std::cout << __cplusplus << std::endl;
     TestRunner tr;
     RUN_TEST(tr, TestPushFront);
     RUN_TEST(tr, TestInsertAfter);
