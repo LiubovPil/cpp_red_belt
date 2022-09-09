@@ -1,5 +1,5 @@
 ﻿// Tasks from the course "Fundamentals of C++: Red Belt
-// Done by Liubov Piliagina
+// Done by LiubovPil
 
 #include <algorithm>
 #include <cmath>

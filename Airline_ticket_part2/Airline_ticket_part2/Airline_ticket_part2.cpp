@@ -1,5 +1,5 @@
 ﻿// Tasks from the course "Fundamentals of C++: Red Belt
-// Done by Liubov Piliagina
+// Done by LiubovPil
 
 #include "Airline_ticket_part2.h"
 #include "Test_runner.h"
