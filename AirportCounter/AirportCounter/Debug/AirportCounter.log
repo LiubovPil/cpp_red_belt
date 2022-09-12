@@ -1,6 +1,2 @@
 ﻿  AirportCounter.cpp
-E:\Repos\cpp_red_belt\AirportCounter\AirportCounter\AirportCounter.cpp(35,5): error C2760: синтаксическая ошибка: непредвиденный токен "}"; требуется ";"
-E:\Repos\cpp_red_belt\AirportCounter\AirportCounter\AirportCounter.cpp(67): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "AirportCounter<TAirport>"
-E:\Repos\cpp_red_belt\AirportCounter\AirportCounter\AirportCounter.cpp(40,5): error C2760: синтаксическая ошибка: непредвиденный токен "}"; требуется "код выражения"
-E:\Repos\cpp_red_belt\AirportCounter\AirportCounter\AirportCounter.cpp(179,26): error C2429: для функция языка "структурированные привязки" нужен флаг компилятора "/std:c++17"
-E:\Repos\cpp_red_belt\AirportCounter\AirportCounter\AirportCounter.cpp(207,27): error C2429: для функция языка "структурированные привязки" нужен флаг компилятора "/std:c++17"
+  AirportCounter.vcxproj -> E:\Repos\cpp_red_belt\AirportCounter\Debug\AirportCounter.exe

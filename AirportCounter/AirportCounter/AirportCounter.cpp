@@ -15,12 +15,10 @@ using namespace std;
 template <typename TAirport>
 class AirportCounter {
 public:
-    // конструктор по умолчанию: список элементов пока пуст
     AirportCounter(){
         data.fill(0);
     }
 
-    // конструктор от диапазона элементов типа TAirport
     template <typename TIterator>
     AirportCounter(TIterator begin, TIterator end):
         AirportCounter() {
@@ -29,33 +27,33 @@ public:
         }
     }
 
-    // получить количество элементов, равных данному
     size_t Get(TAirport airport) const {
-        return data
+        return data[static_cast<size_t>(airport)];
     }
 
-    // добавить данный элемент
     void Insert(TAirport airport) {
-        data.
+        ++GetRef(airport);
     }
 
-    // удалить одно вхождение данного элемента
     void EraseOne(TAirport airport) {
-
+        if(GetRef(airport) > 0)
+            --GetRef(airport);
     }
 
-    // удалить все вхождения данного элемента
-    void EraseAll(TAirport airport);
+    void EraseAll(TAirport airport) {
+        GetRef(airport) = 0;
+    }
 
     static const size_t SIZE = static_cast<uint32_t>(TAirport::Last_);
     using Item = pair<TAirport, size_t>;
     using Items = array<Item, SIZE>;
 
-    // получить некоторый объект, по которому можно проитерироваться,
-    // получив набор объектов типа Item - пар (аэропорт, количество),
-    // упорядоченных по аэропорту
     Items GetItems() const {
-        return {};
+        Items all_airport;
+        for (size_t i = 0; i < SIZE; ++i) {
+            all_airport[i] = { static_cast<TAirport>(i) , data[i] };
+        }
+        return all_airport;
     }
 
 private:
