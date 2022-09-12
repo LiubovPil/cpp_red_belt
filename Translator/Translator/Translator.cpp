@@ -48,6 +48,8 @@ private:
 
 void TestSimple() {
 	Translator translator;
+	translator.Add(string("okno"), string("casement"));
+	translator.Add(string("stol"), string("desk"));
 	translator.Add(string("okno"), string("window"));
 	translator.Add(string("stol"), string("table"));
 
