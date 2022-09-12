@@ -10,35 +10,70 @@ using namespace std;
 class Editor {
 public:
     //Реализуйте конструктор по умолчанию и объявленные методы
-    Editor() {
-
+    Editor() : pos(text.end()) {
     }
     void Left() { // сдвинуть курсор влево
-
+        //pos = Advance(pos, -1);
+        if (pos != text.begin())
+            pos--;
     }
     void Right() {  // сдвинуть курсор вправо
-
+        //pos = Advance(pos, 1);
+        if (pos != text.end())
+            pos++;
     }
     void Insert(char token) {  // вставить символ token
-
+        text.insert(pos, token);
     }
-    void Cut(size_t tokens = 1) {  // cкопировать не более tokens символов, начиная с текущей позиции курсора
-
+    void Cut(size_t tokens = 1) {  // вырезать не более tokens символов, начиная с текущей позиции курсор
+        size_t count = tokens;
+        Iterator it = pos;
+        buffer.clear();
+        while (count > 0 && it != text.end()) {
+           buffer.push_back(*it);
+           it++;
+           count--;
+        }
+        pos = text.erase(pos, it); 
+        /*auto pos2 = Advance(pos, tokens);
+        buffer.assign(pos, pos2);
+        pos = text.erase(pos, pos2);*/
     }
-    void Copy(size_t tokens = 1) { // вырезать не более tokens символов, начиная с текущей позиции курсор
-
+    void Copy(size_t tokens = 1) { // cкопировать не более tokens символов, начиная с текущей позиции курсора
+        size_t count = tokens;
+        Iterator it = pos;
+        buffer.clear();
+        while (count > 0 && it != text.end()) {
+            buffer.push_back(*it);
+            it++;
+            count--;
+        }
+        /*auto pos2 = Advance(pos, tokens);
+        buffer.assign(pos, pos2);*/
     }
     void Paste() {  // вставить содержимое буфера в текущую позицию курсора
-
+        text.insert(pos, buffer.begin(), buffer.end());
     }
     string GetText() const {  // получить текущее содержимое текстового редактора
-
+        return { text.begin(), text.end() };
     }
 private:
     using Iterator = list<char>::iterator;
     list<char> text;
     list<char> buffer;
     Iterator pos;
+
+    Iterator Advance(Iterator it, int steps) const {
+        while (steps > 0 && it != text.end()) {
+            ++it;
+            --steps;
+        }
+        while (steps < 0 && it != text.begin()) {
+            --it;
+            ++steps;
+        }
+        return it;
+    }
 };
 
 void TypeText(Editor& editor, const string& text) {
@@ -137,7 +172,7 @@ int main() {
     RUN_TEST(tr, TestNoText);
     RUN_TEST(tr, TestEmptyBuffer);
 
-    Editor editor;
+    /*Editor editor;
     const string text = "hello, world";
     for (char c : text) {
         editor.Insert(c);
@@ -164,6 +199,6 @@ int main() {
     //Текущее состояние редактора: `world, hello|, `
     editor.Cut(3); // Будут вырезаны 2 символа
     // Текущее состояние редактора: `world, hello|`
-    cout << editor.GetText();
+    cout << editor.GetText();*/
     return 0;
 }
