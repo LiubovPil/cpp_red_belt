@@ -1,0 +1,25 @@
+﻿  JosephRhyme.cpp
+E:\Repos\cpp_red_belt\JosephRhyme\JosephRhyme\JosephRhyme.cpp(25,35): error C2676: бинарный "[": "std::list<int,std::allocator<int>>" не определяет этот оператор или преобразование к типу приемлемо к встроенному оператору
+E:\Repos\cpp_red_belt\JosephRhyme\JosephRhyme\JosephRhyme.cpp(44): message : выполняется компиляция ссылки на экземпляр шаблон функции "void MakeJosephusPermutation<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>>(RandomIt,RandomIt,uint32_t)"
+          with
+          [
+              _Ty=int,
+              RandomIt=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<int>>>
+          ]
+E:\Repos\cpp_red_belt\JosephRhyme\JosephRhyme\JosephRhyme.cpp(26,33): error C2676: бинарный "+": "std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>" не определяет этот оператор или преобразование к типу приемлемо к встроенному оператору
+          with
+          [
+              _Ty=int
+          ]
+E:\Repos\cpp_red_belt\JosephRhyme\JosephRhyme\JosephRhyme.cpp(25,35): error C2676: бинарный "[": "std::list<NoncopyableInt,std::allocator<NoncopyableInt>>" не определяет этот оператор или преобразование к типу приемлемо к встроенному оператору
+E:\Repos\cpp_red_belt\JosephRhyme\JosephRhyme\JosephRhyme.cpp(88): message : выполняется компиляция ссылки на экземпляр шаблон функции "void MakeJosephusPermutation<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>>(RandomIt,RandomIt,uint32_t)"
+          with
+          [
+              _Ty=NoncopyableInt,
+              RandomIt=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<NoncopyableInt>>>
+          ]
+E:\Repos\cpp_red_belt\JosephRhyme\JosephRhyme\JosephRhyme.cpp(26,33): error C2676: бинарный "+": "std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>" не определяет этот оператор или преобразование к типу приемлемо к встроенному оператору
+          with
+          [
+              _Ty=NoncopyableInt
+          ]
