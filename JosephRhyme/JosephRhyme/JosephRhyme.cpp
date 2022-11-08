@@ -13,16 +13,12 @@
 
 using namespace std;
 
-
 template <typename RandomIt>
 void MakeJosephusPermutation(RandomIt first, RandomIt last, uint32_t step_size) {
-    list<typename RandomIt::value_type> pool;
-    for (auto it = first; it != last; ++it) {
-        pool.push_back(move(*it));
-    }
+    vector<typename RandomIt::value_type> pool(first, last);
     size_t cur_pos = 0;
     while (!pool.empty()) {
-        *(first++) = (pool[cur_pos]);
+        *(first++) = pool[cur_pos];
         pool.erase(pool.begin() + cur_pos);
         if (pool.empty()) {
             break;
