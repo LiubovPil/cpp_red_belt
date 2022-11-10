@@ -33,7 +33,7 @@ Key<String> ComputeStringKey(const String& string) {
 	return chars;
 }
 
-
+//разбить задачу на две части - посмотреть, какие буквы есть в слове, и собрать итоговый вектор
 template <typename String>
 vector<Group<String>> GroupHeavyStrings(vector<String> strings) {
 	//удобный способ сгруппировать имеющиеся слова по буквам, содержащимся в них
