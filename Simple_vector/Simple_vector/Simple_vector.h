@@ -49,6 +49,14 @@ public:
 		}
 	}
 
+	/*void operator=(const SimpleVector& other) {
+		delete[] data;
+		data = new T[other.capacity];
+		size = other.size;
+		capacity = other.capacity;
+		copy(other.begin(), other.end(), begin());
+	}*/
+
 	T* begin() {
 		return data;
 	}
