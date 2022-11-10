@@ -6,6 +6,7 @@
 #include <algorithm>
 #include <iostream>
 #include <vector>
+#include <numeric>
 #include <string>
 
 using namespace std;
@@ -39,9 +40,23 @@ void TestPushBack() {
     ASSERT(equal(begin(v), end(v), begin(expected)));
 }
 
+void TestCopyAssignment() {
+    SimpleVector<int> numbers(10);
+    iota(numbers.begin(), numbers.end(), 1);
+
+    SimpleVector<int> dest;
+    ASSERT_EQUAL(dest.Size(), 0u);
+
+    dest = numbers;
+    ASSERT_EQUAL(dest.Size(), numbers.Size());
+    ASSERT(dest.Capacity() >= dest.Size());
+    ASSERT(equal(dest.begin(), dest.end(), numbers.begin()));
+}
+
 int main() {
     TestRunner tr;
     RUN_TEST(tr, TestConstruction);
     RUN_TEST(tr, TestPushBack);
+    RUN_TEST(tr, TestCopyAssignment);
     return 0;
 }

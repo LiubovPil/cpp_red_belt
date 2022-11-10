@@ -1,0 +1,4 @@
+﻿  GroupHeavyStrings.cpp
+  Test_Runner.cpp
+  Создание кода...
+E:\Repos\cpp_red_belt\GroupHeavyStrings\GroupHeavyStrings\GroupHeavyStrings.cpp(27): error C4716: GroupHeavyStrings<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >: должна возвращать значение

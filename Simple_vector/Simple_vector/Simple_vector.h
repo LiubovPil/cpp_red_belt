@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 #include <cstdlib>
 #include <algorithm>
@@ -11,11 +11,21 @@ public:
 	SimpleVector() {
 		data = nullptr;
 	}
+
+	SimpleVector(const SimpleVector& other) 
+		: data(new T[other.capacity]),
+		size(other.size),
+		capacity(other.capacity)
+	{
+		copy(other.begin(), other.end(), begin());
+	}
+
 	explicit SimpleVector(size_t size):
 	data(new T[size]),
 	capacity(size),
 	size(size){
 	}
+
 	~SimpleVector() {
 		delete[] data;
 	}
@@ -24,10 +34,33 @@ public:
 		return data[index];
 	}
 
+	void operator=(const SimpleVector& other) {
+		if (this != &other) {
+			if (other.size <= capacity) {
+				size = other.size;
+				copy(other.begin(), other.end(), begin());
+			}
+			else {   //идиома copy-and-swap.
+				SimpleVector<T> tmp(other);
+				swap(tmp.data, data);
+				swap(tmp.size, size);
+				swap(tmp.capacity, capacity);
+			}
+		}
+	}
+
 	T* begin() {
 		return data;
 	}
 	T* end() {
+		return data + size;
+	}
+
+	const T* begin() const {
+		return data; 
+	}
+
+	const T* end() const {
 		return data + size;
 	}
 

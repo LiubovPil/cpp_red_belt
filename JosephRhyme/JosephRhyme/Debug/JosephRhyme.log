@@ -1,10 +1,2 @@
 ﻿  JosephRhyme.cpp
-E:\Repos\cpp_red_belt\JosephRhyme\JosephRhyme\JosephRhyme.cpp(21,20): error C2280: "NoncopyableInt &NoncopyableInt::operator =(const NoncopyableInt &)": предпринята попытка ссылки на удаленную функцию
-E:\Repos\cpp_red_belt\JosephRhyme\JosephRhyme\JosephRhyme.cpp(62): message : см. объявление "NoncopyableInt::operator ="
-E:\Repos\cpp_red_belt\JosephRhyme\JosephRhyme\JosephRhyme.cpp(62,21): message : "NoncopyableInt &NoncopyableInt::operator =(const NoncopyableInt &)": функция явно удалена.
-E:\Repos\cpp_red_belt\JosephRhyme\JosephRhyme\JosephRhyme.cpp(84): message : выполняется компиляция ссылки на экземпляр шаблон функции "void MakeJosephusPermutation<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>>(RandomIt,RandomIt,uint32_t)"
-          with
-          [
-              _Ty=NoncopyableInt,
-              RandomIt=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<NoncopyableInt>>>
-          ]
+  JosephRhyme.vcxproj -> E:\Repos\cpp_red_belt\JosephRhyme\Debug\JosephRhyme.exe
