@@ -1,6 +1,8 @@
 ﻿#include "Test_runner.h"
 
 #include <algorithm>
+#include <deque>
+#include <map>
 #include <string>
 #include <vector>
 
@@ -21,12 +23,34 @@ template <typename String>
 using Char = typename String::value_type;
 
 template <typename String>
-vector<Group<String>> GroupHeavyStrings(vector<String> strings) {
-	vector<Group<String>> groups;
-	// Напишите реализацию функции,
-	// использовав не более 1 копирования каждого символа
-	return;
+using Key = String;
+
+template <typename String>
+Key<String> ComputeStringKey(const String& string) {
+	String chars = string;
+	sort(begin(chars), end(chars));
+	chars.erase(unique(begin(chars), end(chars)), end(chars));
+	return chars;
 }
+
+
+template <typename String>
+vector<Group<String>> GroupHeavyStrings(vector<String> strings) {
+	//удобный способ сгруппировать имеющиеся слова по буквам, содержащимся в них
+	//ключи = слова из букв слова(без повторений)
+	map<Key<String>, Group<String>> groups_map;
+	for (String& string : strings) {
+		groups_map[ComputeStringKey(string)].push_back(move(string));
+	}
+
+	//создаем итоговый вектор из Group - перемещаем из словаря по ключям целую Group(отбрасываем ключи)
+	vector<Group<String>> groups;
+	for (auto& [key, group] : groups_map) {
+		groups.push_back(move(group));
+	}
+	return groups;
+}
+
 
 
 void TestGroupingABC() {
