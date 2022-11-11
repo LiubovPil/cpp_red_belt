@@ -1,25 +1,2 @@
 ﻿  SplitIntoSentences.cpp
-E:\Repos\cpp_red_belt\SplitIntoSentences\SplitIntoSentences\SplitIntoSentences.cpp(66,18): error C2011: TestToken: переопределение типа "struct"
-E:\Repos\cpp_red_belt\SplitIntoSentences\SplitIntoSentences\SplitIntoSentences.cpp(50): message : см. объявление "TestToken"
-E:\Repos\cpp_red_belt\SplitIntoSentences\SplitIntoSentences\SplitIntoSentences.cpp(78,10): error C2084: функция "std::ostream &operator <<(std::ostream &,const TestToken &)" уже имеет текст реализации
-E:\Repos\cpp_red_belt\SplitIntoSentences\SplitIntoSentences\SplitIntoSentences.cpp(62): message : см. предыдущее определение "<<"
-E:\Repos\cpp_red_belt\SplitIntoSentences\SplitIntoSentences\SplitIntoSentences.cpp(79,27): error C2027: использование неопределенного типа "TestToken"
-E:\Repos\cpp_red_belt\SplitIntoSentences\SplitIntoSentences\SplitIntoSentences.cpp(50): message : см. объявление "TestToken"
-E:\Repos\cpp_red_belt\SplitIntoSentences\SplitIntoSentences\SplitIntoSentences.cpp(85,1): error C2440: <function-style-cast>: невозможно преобразовать "initializer list" в "std::vector<TestToken,std::allocator<TestToken>>"
-E:\Repos\cpp_red_belt\SplitIntoSentences\SplitIntoSentences\SplitIntoSentences.cpp(92,1): message : Ни один конструктор не смог принять исходный тип, либо разрешение перегрузки конструктора неоднозначно
-E:\Repos\cpp_red_belt\SplitIntoSentences\SplitIntoSentences\SplitIntoSentences.cpp(85,1): error C2672: "SplitIntoSentences": не найдена соответствующая перегруженная функция
-E:\Repos\cpp_red_belt\SplitIntoSentences\SplitIntoSentences\SplitIntoSentences.cpp(85,1): error C2440: <function-style-cast>: невозможно преобразовать "initializer list" в "std::vector<std::vector<TestToken,std::allocator<TestToken>>,std::allocator<std::vector<TestToken,std::allocator<TestToken>>>>"
-E:\Repos\cpp_red_belt\SplitIntoSentences\SplitIntoSentences\SplitIntoSentences.cpp(92,1): message : Ни один конструктор не смог принять исходный тип, либо разрешение перегрузки конструктора неоднозначно
-E:\Repos\cpp_red_belt\SplitIntoSentences\SplitIntoSentences\SplitIntoSentences.cpp(85,1): error C2672: "AssertEqual": не найдена соответствующая перегруженная функция
-E:\Repos\cpp_red_belt\SplitIntoSentences\SplitIntoSentences\SplitIntoSentences.cpp(94,1): error C2440: <function-style-cast>: невозможно преобразовать "initializer list" в "std::vector<TestToken,std::allocator<TestToken>>"
-E:\Repos\cpp_red_belt\SplitIntoSentences\SplitIntoSentences\SplitIntoSentences.cpp(101,1): message : Ни один конструктор не смог принять исходный тип, либо разрешение перегрузки конструктора неоднозначно
-E:\Repos\cpp_red_belt\SplitIntoSentences\SplitIntoSentences\SplitIntoSentences.cpp(94,1): error C2672: "SplitIntoSentences": не найдена соответствующая перегруженная функция
-E:\Repos\cpp_red_belt\SplitIntoSentences\SplitIntoSentences\SplitIntoSentences.cpp(94,1): error C2440: <function-style-cast>: невозможно преобразовать "initializer list" в "std::vector<std::vector<TestToken,std::allocator<TestToken>>,std::allocator<std::vector<TestToken,std::allocator<TestToken>>>>"
-E:\Repos\cpp_red_belt\SplitIntoSentences\SplitIntoSentences\SplitIntoSentences.cpp(101,1): message : Ни один конструктор не смог принять исходный тип, либо разрешение перегрузки конструктора неоднозначно
-E:\Repos\cpp_red_belt\SplitIntoSentences\SplitIntoSentences\SplitIntoSentences.cpp(94,1): error C2672: "AssertEqual": не найдена соответствующая перегруженная функция
-E:\Repos\cpp_red_belt\SplitIntoSentences\SplitIntoSentences\SplitIntoSentences.cpp(103,1): error C2440: <function-style-cast>: невозможно преобразовать "initializer list" в "std::vector<TestToken,std::allocator<TestToken>>"
-E:\Repos\cpp_red_belt\SplitIntoSentences\SplitIntoSentences\SplitIntoSentences.cpp(112,1): message : Ни один конструктор не смог принять исходный тип, либо разрешение перегрузки конструктора неоднозначно
-E:\Repos\cpp_red_belt\SplitIntoSentences\SplitIntoSentences\SplitIntoSentences.cpp(103,1): error C2672: "SplitIntoSentences": не найдена соответствующая перегруженная функция
-E:\Repos\cpp_red_belt\SplitIntoSentences\SplitIntoSentences\SplitIntoSentences.cpp(103,1): error C2440: <function-style-cast>: невозможно преобразовать "initializer list" в "std::vector<std::vector<TestToken,std::allocator<TestToken>>,std::allocator<std::vector<TestToken,std::allocator<TestToken>>>>"
-E:\Repos\cpp_red_belt\SplitIntoSentences\SplitIntoSentences\SplitIntoSentences.cpp(112,1): message : Ни один конструктор не смог принять исходный тип, либо разрешение перегрузки конструктора неоднозначно
-E:\Repos\cpp_red_belt\SplitIntoSentences\SplitIntoSentences\SplitIntoSentences.cpp(103,1): error C2672: "AssertEqual": не найдена соответствующая перегруженная функция
+  SplitIntoSentences.vcxproj -> E:\Repos\cpp_red_belt\SplitIntoSentences\Debug\SplitIntoSentences.exe
