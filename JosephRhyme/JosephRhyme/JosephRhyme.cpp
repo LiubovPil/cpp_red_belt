@@ -7,12 +7,30 @@
 #include <iterator>
 #include <numeric>
 #include <vector>
+#include <list>
 #include <iostream>
 #include <utility>
-#include <list>
 
 using namespace std;
 
+/*template <typename RandomIt>
+void MakeJosephusPermutation(RandomIt first, RandomIt last, uint32_t step_size) {
+    vector<typename RandomIt::value_type> pool(first, last);
+    size_t cur_pos = 0;
+    while (!pool.empty()) {
+        *(first++) = pool[cur_pos];
+        pool.erase(pool.begin() + cur_pos);
+        if (pool.empty()) {
+            break;
+        }
+        cur_pos = (cur_pos + step_size - 1) % pool.size();
+    }
+}*/
+
+template <typename Container, typename ForwardIt>
+ForwardIt LoopIterator(Container& container, ForwardIt pos) {
+    return pos == container.end() ? container.begin() : pos;
+}
 
 template <typename RandomIt>
 void MakeJosephusPermutation(RandomIt first, RandomIt last, uint32_t step_size) {
@@ -20,14 +38,18 @@ void MakeJosephusPermutation(RandomIt first, RandomIt last, uint32_t step_size) 
     for (auto it = first; it != last; ++it) {
         pool.push_back(move(*it));
     }
-    size_t cur_pos = 0;
+    auto cur_pos = pool.begin();
     while (!pool.empty()) {
-        *(first++) = (pool[cur_pos]);
-        pool.erase(pool.begin() + cur_pos);
-        if (pool.empty()) {
+        *(first++) = move(*cur_pos);
+        if (pool.size() == 1) {
             break;
         }
-        cur_pos = (cur_pos + step_size - 1) % pool.size();
+        const auto next_pos = LoopIterator(pool, next(cur_pos));
+        pool.erase(cur_pos);
+        cur_pos = next_pos;
+        for (uint32_t step_index = 1; step_index < step_size; ++step_index) {
+            cur_pos = LoopIterator(pool, next(cur_pos));
+        }
     }
 }
 
