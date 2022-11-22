@@ -1,0 +1,40 @@
+﻿  Concurrent_map.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\type_traits(1595,67): warning C4244: аргумент: преобразование "_Ty1" в "int", возможна потеря данных
+          with
+          [
+              _Ty1=unsigned __int64
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\future(1456): message : выполняется компиляция ссылки на экземпляр шаблон функции "void std::invoke<RunConcurrentUpdates::<lambda_7b652e7f6a5d5d4de1864a5fdd747cc8>,unsigned __int64,>(_Callable &&,_Ty1 &&) noexcept(false)"
+          with
+          [
+              _Callable=RunConcurrentUpdates::<lambda_7b652e7f6a5d5d4de1864a5fdd747cc8>,
+              _Ty1=unsigned __int64
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\future(1463): message : выполняется компиляция ссылки на экземпляр шаблон функции "void std::_Invoke_stored_explicit<RunConcurrentUpdates::<lambda_7b652e7f6a5d5d4de1864a5fdd747cc8>,unsigned __int64,0,1>(std::tuple<RunConcurrentUpdates::<lambda_7b652e7f6a5d5d4de1864a5fdd747cc8>,unsigned __int64> &&,std::integer_sequence<size_t,0,1>)"
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\future(1490): message : выполняется компиляция ссылки на экземпляр шаблон функции "void std::_Invoke_stored<RunConcurrentUpdates::<lambda_7b652e7f6a5d5d4de1864a5fdd747cc8>,unsigned __int64>(std::tuple<RunConcurrentUpdates::<lambda_7b652e7f6a5d5d4de1864a5fdd747cc8>,unsigned __int64> &&)"
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\future(1490): message : во время компиляции функции-члена класс шаблон "void std::_Fake_no_copy_callable_adapter<_Fty,size_t &>::operator ()(void)"
+          with
+          [
+              _Fty=RunConcurrentUpdates::<lambda_7b652e7f6a5d5d4de1864a5fdd747cc8> &
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\type_traits(1585): message : выполняется компиляция ссылки на экземпляр шаблон функции "void std::_Fake_no_copy_callable_adapter<_Fty,size_t &>::operator ()(void)"
+          with
+          [
+              _Fty=RunConcurrentUpdates::<lambda_7b652e7f6a5d5d4de1864a5fdd747cc8> &
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\future(1512): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "std::_Fake_no_copy_callable_adapter<_Fty,size_t &>"
+          with
+          [
+              _Fty=RunConcurrentUpdates::<lambda_7b652e7f6a5d5d4de1864a5fdd747cc8> &
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\future(1524): message : выполняется компиляция ссылки на экземпляр шаблон функции "std::future<void> std::async<RunConcurrentUpdates::<lambda_7b652e7f6a5d5d4de1864a5fdd747cc8>&,size_t&>(std::launch,_Fty,size_t &)"
+          with
+          [
+              _Fty=RunConcurrentUpdates::<lambda_7b652e7f6a5d5d4de1864a5fdd747cc8> &
+          ]
+E:\Repos\cpp_red_belt\Concurrent_map\Concurrent_map\Concurrent_map.cpp(75): message : выполняется компиляция ссылки на экземпляр шаблон функции "std::future<void> std::async<RunConcurrentUpdates::<lambda_7b652e7f6a5d5d4de1864a5fdd747cc8>&,size_t&>(_Fty,size_t &)"
+          with
+          [
+              _Fty=RunConcurrentUpdates::<lambda_7b652e7f6a5d5d4de1864a5fdd747cc8> &
+          ]
+  Concurrent_map.vcxproj -> E:\Repos\cpp_red_belt\Concurrent_map\x64\Debug\Concurrent_map.exe

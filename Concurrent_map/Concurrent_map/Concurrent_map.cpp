@@ -2,20 +2,19 @@
 #include "Profile.h"
 
 #include <algorithm>
-#include <mutex>
-#include <numeric>
 #include <future>
 #include <map>
 #include <vector>
 #include <string>
 #include <random>
-#include <cmath>
+#include <numeric>
+//#include <cmath>
 
 using namespace std;
 
 template <typename T>
-T Abs(T x) {
-    return x < 0 ? (x * -1) : x;
+T GetAbs(T x) {
+    return x >= 0 ? x : (-1 * x);
 }
 
 template <typename K, typename V>
@@ -24,14 +23,14 @@ public:
     static_assert(is_integral_v<K>, "ConcurrentMap supports only integer keys");
 
     struct Access {
-        V& ref_to_value;
         lock_guard<mutex> guard;
+        V& ref_to_value;
 
-        Access(const K& key, pair<mutex, map<K, V>>& bucket_content)
+        /*Access(const K& key, pair<mutex, map<K, V>>& bucket_content)
             : guard(bucket_content.first)
             , ref_to_value(bucket_content.second[key])
         {
-        }
+        }*/
     };
 
     explicit ConcurrentMap(size_t bucket_count): data(bucket_count)
@@ -39,8 +38,8 @@ public:
     }
 
     Access operator[](const K& key) {
-        auto& bucket = data[(Abs(key) % data.size())];
-        return { key, bucket };
+        auto& bucket = data[GetAbs(key) % data.size()];
+        return { lock_guard(bucket.first), bucket.second[key] };
     }
 
     map<K, V> BuildOrdinaryMap() {
