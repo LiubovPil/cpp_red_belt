@@ -1,4 +1,10 @@
 ﻿  Synchronized.cpp
-  Test_runner.cpp
-  Создание кода...
+C:\Repos\cpp_red_belt\Synchronized\Synchronized\Synchronized.cpp(173,15): warning C4018: >=: несоответствие типов со знаком и без знака
+C:\Repos\cpp_red_belt\Synchronized\Synchronized\Synchronized.cpp(174,23): warning C4018: >=: несоответствие типов со знаком и без знака
+C:\Repos\cpp_red_belt\Synchronized\Synchronized\Synchronized.cpp(175,30): warning C4018: >: несоответствие типов со знаком и без знака
+C:\Repos\cpp_red_belt\Synchronized\Synchronized\Synchronized.cpp(184,36): warning C4018: <=: несоответствие типов со знаком и без знака
+C:\Repos\cpp_red_belt\Synchronized\Synchronized\Synchronized.cpp(191,25): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Repos\cpp_red_belt\Synchronized\Synchronized\Synchronized.cpp(215,41): warning C4018: >: несоответствие типов со знаком и без знака
+C:\Repos\cpp_red_belt\Synchronized\Synchronized\Synchronized.cpp(218,26): warning C4018: <=: несоответствие типов со знаком и без знака
+C:\Repos\cpp_red_belt\Synchronized\Synchronized\Synchronized.cpp(233,17): warning C4018: >=: несоответствие типов со знаком и без знака
   Synchronized.vcxproj -> C:\Repos\cpp_red_belt\Synchronized\Debug\Synchronized.exe

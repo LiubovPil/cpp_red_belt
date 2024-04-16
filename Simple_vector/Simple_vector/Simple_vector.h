@@ -77,15 +77,18 @@ public:
 	}*/
 
 	//version with move
-	void operator=(SimpleVector<T>&& other) {
-		delete[] data;
+	SimpleVector<T>& operator=(SimpleVector<T>&& other) {
+		if (this != &other) {
+			delete[] data;
 
-		data = other.data;
-		size = other.size;
-		capacity = other.capacity;
+			data = other.data;
+			size = other.size;
+			capacity = other.capacity;
 
-		other.data = nullptr;
-		other.size = other.capacity = 0;
+			other.data = nullptr;
+			other.size = other.capacity = 0;
+		}
+		return *this;
 	}
 
 	T* begin() {
